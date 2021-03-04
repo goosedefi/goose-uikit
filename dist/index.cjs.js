@@ -2969,6 +2969,7 @@ exports.CloseIcon = Icon$k;
 exports.CogIcon = Icon$l;
 exports.CommunityIcon = Icon$m;
 exports.CopyIcon = Icon$n;
+exports.CopyToClipboard = CopyToClipboard;
 exports.Dropdown = Dropdown;
 exports.ErrorIcon = Icon$1;
 exports.Flex = Flex;
