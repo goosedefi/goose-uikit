@@ -2151,10 +2151,10 @@ var socials = [
                 label: "русский",
                 href: "https://t.me/goosefinancerussian",
             },
-            // {
-            //   label: "Türkiye",
-            //   href: "https://t.me/pancakeswapturkiye",
-            // },
+            {
+                label: "Türkiye",
+                href: "https://t.me/GooseFinanceTurkey",
+            },
             // {
             //   label: "Português",
             //   href: "https://t.me/PancakeSwapPortuguese",
