@@ -16,6 +16,7 @@ export { default as TelegramIcon } from "./Telegram";
 export { default as TicketIcon } from "./Ticket";
 export { default as TradeIcon } from "./Trade";
 export { default as TwitterIcon } from "./Twitter";
+export { default as RedditIcon } from "./Reddit";
 export { default as AuditIcon } from "./Audit";
 export { default as GooseIcon } from "./Goose";
 export { default as HandshakeIcon } from "./Handshake";
