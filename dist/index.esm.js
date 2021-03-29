@@ -2170,10 +2170,10 @@ var socials = [
             //   label: "Tiếng Việt",
             //   href: "https://t.me/PancakeSwapVN",
             // },
-            // {
-            //   label: "Italiano",
-            //   href: "https://t.me/pancakeswap_ita",
-            // },
+            {
+                label: "Italiano",
+                href: "https://t.me/goosefinanceitalian",
+            },
             {
                 label: "русский",
                 href: "https://t.me/goosefinancerussian",
@@ -2194,10 +2194,10 @@ var socials = [
                 label: "日本語",
                 href: "https://t.me/goosefinancejapanese",
             },
-            // {
-            //   label: "Français",
-            //   href: "https://t.me/pancakeswapfr",
-            // },
+            {
+                label: "Français",
+                href: "https://t.me/goosefinancefrench",
+            },
             {
                 label: "Announcements",
                 href: "https://t.me/goosefinanceann",
