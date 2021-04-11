@@ -1285,7 +1285,16 @@ var createReducer = function () { return function (state, action) {
             if (state.paginationEnabled === true) {
                 rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
             }
-            return __assign(__assign({}, state), { rows: rows, originalRows: action.data });
+            columnCopy = state.columns.map(function (column) {
+                if (state.sortColumn === column.name) {
+                    return __assign(__assign({}, column), { sorted: {
+                            on: true,
+                            asc: column.sorted.asc,
+                        } });
+                }
+                return column;
+            });
+            return __assign(__assign({}, state), { rows: rows, originalRows: action.data, columns: columnCopy });
         case "NEXT_PAGE":
             nextPage = state.pagination.page + 1;
             return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
@@ -1426,6 +1435,7 @@ var useTable = function (columns, data, options) {
         return columns.map(function (column) {
             return __assign(__assign({}, column), { label: column.label ? column.label : column.name, hidden: column.hidden ? column.hidden : false, sort: column.sort, sorted: {
                     on: false,
+                    asc: false,
                 } });
         });
     }, [columns]);
@@ -1462,7 +1472,7 @@ var useTable = function (columns, data, options) {
         selectedRows: [],
         toggleAllState: false,
         filterOn: !!(options === null || options === void 0 ? void 0 : options.filter),
-        sortColumn: null,
+        sortColumn: options === null || options === void 0 ? void 0 : options.sortColumn,
         paginationEnabled: !!(options === null || options === void 0 ? void 0 : options.pagination),
         pagination: {
             page: 1,
