@@ -2,12 +2,12 @@ import { Colors } from "./types";
 
 export const baseColors = {
   failure: "#E11E3B",
-  primary: "#00f4a6",
-  primaryBright: "#00f4a6",
-  primaryDark: "#00f4a6",
+  primary: "#ffffff",
+  primaryBright: "#ffffff",
+  primaryDark: "#ffffff",
   secondary: "#316daf",
-  success: "#00f4a6",
-  warning: "#D600FF",
+  success: "#ffffff",
+  warning: "#ff0000",
 };
 
 export const brandColors = {
@@ -17,16 +17,16 @@ export const brandColors = {
 export const lightColors: Colors = {
   ...baseColors,
   ...brandColors,
-  background: "#93d2ff",
+  background: "#749ece",
   backgroundDisabled: "#d5eaff",
   contrast: "#00194b",
   invertedContrast: "#d5eaff",
-  input: "#bee9ff",
-  tertiary: "#c7fff6",
+  input: "#5da0d4",
+  tertiary: "#003276",
   text: "#124996",
-  textDisabled: "#7b98c8",
-  textSubtle: "#256cb6",
-  borderColor: "#d5eaff",
+  textDisabled: "#3e66a8",
+  textSubtle: "#0c4e93",
+  borderColor: "#105498",
   card: "#d5eaff",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #3dada3 0%, #44beee 100%)",
